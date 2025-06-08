@@ -15,7 +15,8 @@ import CreateCard from "./pages/CreateCard/CreateCard.page";
 import Favourites from "./pages/Favourites/Favourites";
 import CardDetail from "./pages/CardDetail/CardDetail";
 import Profile from "./pages/Profile/Profile";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { TRootState } from "./store/store";
 import { userActions } from "./store/userSlice";
 import { searchActions } from "./store/searchSlice";
 import { useAuth } from "./context/AuthContext";
@@ -29,6 +30,7 @@ function App() {
   const [searchTerm, setSearchTerm] = useState("");
   const dispatch = useDispatch();
   const auth = useAuth(); // Get auth context
+  const user = useSelector((state: TRootState) => state.userSlice.user);
 
   // Decode JWT token to get user data
   const decodeToken = (token: string) => {
@@ -204,9 +206,11 @@ function App() {
               <Button as={Link} to="/profile" gradientDuoTone="purpleToPink" outline className="font-medium shadow-sm hover:shadow transition duration-200">
                 Profile
               </Button>
-              <Button as={Link} to="/create-card" gradientDuoTone="purpleToBlue" className="font-medium shadow-sm hover:shadow transition duration-200">
-                Create Card
-              </Button>
+              {user?.isBusiness && (
+                <Button as={Link} to="/create-card" gradientDuoTone="purpleToBlue" className="font-medium shadow-sm hover:shadow transition duration-200">
+                  Create Card
+                </Button>
+              )}
               <Button as={Link} to="/favourites" gradientDuoTone="purpleToPink" outline className="font-medium shadow-sm hover:shadow transition duration-200">
                 Favourites
               </Button>

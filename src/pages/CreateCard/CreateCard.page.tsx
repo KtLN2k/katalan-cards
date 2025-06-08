@@ -188,7 +188,7 @@ const CreateCard = () => {
           url: formData.image.url,
           alt: formData.image.alt || formData.title // Set alt text to title if not provided
         },
-        phone: Number(formData.phone), // Convert phone to number
+        phone: formData.phone, // Keep phone as string for Joi validation
         address: {
           country: formData.address.country,
           city: formData.address.city,
