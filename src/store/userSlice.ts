@@ -4,6 +4,7 @@ type UserType = {
   _id: string;
   email: string;
   isBusiness: boolean;
+  isAdmin?: boolean;
   name: {
     first: string;
     last: string;

@@ -311,7 +311,7 @@ const Profile = () => {
                         color="purple" 
                         size="xs" 
                         className="w-full" 
-                        onClick={(e) => {
+                        onClick={(e: React.MouseEvent<HTMLButtonElement>) => {
                           e.stopPropagation();
                           navigate(`/card/${card._id}`);
                         }}
