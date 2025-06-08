@@ -6,7 +6,6 @@ import axios from "axios";
 import { Avatar, Button, Modal, Spinner, TextInput, Checkbox, Label } from "flowbite-react";
 import { Tcard } from "../../types/TCard";
 import { FaEdit, FaUser, FaEnvelope, FaPhone, FaIdCard, FaMapMarkerAlt, FaHeart } from "react-icons/fa";
-import { toast } from "react-toastify";
 
 const Profile = () => {
   const user = useSelector((state: TRootState) => state.userSlice.user);
