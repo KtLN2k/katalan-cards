@@ -28,7 +28,7 @@ export type FormData = {
   isBusiness: boolean;
 };
 
-export default function RegisterForm() {
+export default function Register() {
   const {
     register,
     handleSubmit,
