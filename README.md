@@ -1,30 +1,37 @@
-# React + TypeScript + Vite
+# 🎴 Katalan Cards
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+אפליקציית ניהול כרטיסים דיגיטליים – פשוטה, מהירה ונעימה לשימוש.  
+פיתוח ב־React + TypeScript עם עיצוב מודרני מבוסס Tailwind ו־Flowbite.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 תכונות עיקריות
 
-## Expanding the ESLint configuration
+- 🔐 הרשמה והתחברות מאובטחת
+- 🪪 יצירת כרטיסים אישיים (Business / רגילים)
+- ❤️ רשימת מועדפים
+- 📝 עריכת פרופיל אישי
+- 🎯 ניווט מהיר עם React Router
+- 🎨 עיצוב כהה ובהיר
+- ✅ ולידציה חכמה עם Joi + React Hook Form
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+---
 
-- Configure the top-level `parserOptions` property like this:
+## 🛠 טכנולוגיות בשימוש
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: "latest",
-    sourceType: "module",
-    project: ["./tsconfig.json", "./tsconfig.node.json"],
-    tsconfigRootDir: __dirname,
-  },
-};
-```
+- ⚛️ React + TypeScript
+- 💨 Tailwind CSS + Flowbite
+- 🔄 Axios
+- 🌐 React Router
+- 🔐 React Hook Form + Joi
+- ☁️ Render (Deploy)
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+---
+
+## 🧪 הרצה מקומית
+
+```bash
+git clone https://github.com/KtLN2k/katalan-cards
+cd katalan-cards
+npm install
+npm run dev
