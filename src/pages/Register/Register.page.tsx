@@ -65,7 +65,7 @@ export default function RegisterForm() {
         "https://monkfish-app-z9uza.ondigitalocean.app/bcard2/users",
         data
       );
-      toast.success("ההרשמה בוצעה בהצלחה 🎉", { autoClose: 2000 });
+      toast.success("Congrats join the system 🎉", { autoClose: 2000 });
       setTimeout(() => {
         navigate("/");
       }, 2000);
