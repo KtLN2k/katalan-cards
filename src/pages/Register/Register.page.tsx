@@ -2,7 +2,6 @@ import { Button, FloatingLabel } from "flowbite-react";
 import { useForm } from "react-hook-form";
 import { joiResolver } from "@hookform/resolvers/joi";
 import { registerSchema } from "../../validations/register.joi";
-import type { Register } from "react-router-dom";
 import axios from "axios";
 
 export type FormData = {
